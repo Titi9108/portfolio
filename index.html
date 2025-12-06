@@ -6,187 +6,189 @@
     <title>Portfolio – Tarek RAJAB</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ▬▬▬ NAVBAR ▬▬▬ -->
-<nav class="nav">
-    <div class="logo">RAJAB <span>Tarek</span></div>
-    <ul class="nav-links">
-        <li><a href="#hero">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#experience">Expériences</a></li>
-        <li><a href="#entreprise">Entreprise</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="logo">RAJAB <span>Tarek</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#entreprise">Entreprise</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact / CV</a></li>
+        </ul>
+    </nav>
 
+    <!-- HERO AVEC BULLES ANIMÉES -->
+    <section id="hero" class="hero">
+        <!-- bulles -->
+        <div class="bubble b1"></div>
+        <div class="bubble b2"></div>
+        <div class="bubble b3"></div>
 
-<!-- ▬▬▬ HERO (VERSION AVEC TEXTE À GAUCHE + CARTE À DROITE) ▬▬▬ -->
-<section id="hero" class="hero section">
-    <div class="hero-inner two-cols">
+        <h1>Tarek RAJAB</h1>
+        <p>
+            Étudiant en BTS SIO option SISR & alternant chez Vermeg.<br>
+            Passionné par l’infrastructure, les systèmes, les réseaux et la cybersécurité.
+        </p>
 
-        <!-- Texte gauche -->
-        <div>
-            <div class="hero-tag">BTS SIO SISR • Admin Systèmes & Réseaux junior</div>
-            <h1>Tarek RAJAB</h1>
-
-            <p class="hero-desc">
-                Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg.
-                Passionné par l’infrastructure, la virtualisation, la sécurité et les environnements serveurs.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#projects" class="btn primary">Voir mes projets</a>
-                <a href="#contact" class="btn ghost">Me contacter</a>
-            </div>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn-secondary">Me contacter / Télécharger mon CV</a>
         </div>
+    </section>
 
-        <!-- Carte profil droite -->
-        <div class="hero-card">
-            <div class="hero-pill">Profil rapide</div>
+    <!-- À PROPOS -->
+    <section id="about" class="section">
+        <h2 class="section-title">À propos</h2>
+        <p>
+            Je construis un profil d’administrateur systèmes & réseaux orienté
+            <strong>Windows Server</strong>, <strong>virtualisation</strong>, <strong>réseaux</strong> et
+            <strong>sécurité</strong>. Je suis sérieux, curieux et j’aime comprendre ce qui se passe “sous le capot”
+            pour être capable de diagnostiquer et résoudre les incidents rapidement.
+        </p>
+    </section>
 
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">2+</span>
-                    <span class="stat-label">Années IT</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2024–2026</span>
-                    <span class="stat-label">Alternance</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">Infra • Secu</span>
-                    <span class="stat-label">SysAdmin / Réseaux</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- FORMATION -->
+    <section id="formation" class="section">
+        <h2 class="section-title">Formation</h2>
 
+        <h3>BTS SIO SISR – 2024 à 2026</h3>
+        <p>
+            BTS Services Informatiques aux Organisations, option SISR (Solutions d’Infrastructure, Systèmes et Réseaux),
+            en alternance au <strong>CFA ITIS</strong> avec Vermeg comme entreprise d’accueil.
+        </p>
 
-<!-- ▬▬▬ À PROPOS ▬▬▬ -->
-<section id="about" class="section">
-    <h2 class="section-title">À propos</h2>
-    <p>
-        Je suis passionné par l’administration système, la cybersécurité et les environnements serveurs.
-        J’améliore chaque jour mes compétences dans Windows Server, Linux, réseaux et virtualisation.
-    </p>
-</section>
+        <h3>Bac Pro SN RISC – Obtenu en 2024</h3>
+        <p>
+            Bac Professionnel Systèmes Numériques, option Réseaux Informatiques et Systèmes Communicants,<br>
+            au <strong>Lycée Georges Brassens</strong> à Évry-Courcouronnes.
+        </p>
+    </section>
 
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Compétences</h2>
 
-<!-- ▬▬▬ COMPÉTENCES ▬▬▬ -->
-<section id="skills" class="section">
-    <h2 class="section-title">Compétences</h2>
+        <h3>Systèmes & Serveurs</h3>
+        <ul>
+            <li>Installation et administration de <strong>Windows Server</strong>.</li>
+            <li>Gestion des utilisateurs, groupes et OU dans <strong>Active Directory</strong>.</li>
+            <li>Services réseau : <strong>DNS, DHCP, GPO</strong>.</li>
+        </ul>
 
-    <div class="grid three-cols skills-grid">
-        <div class="card">
-            <h3>Infrastructure</h3>
-            <ul>
-                <li>Windows Server</li>
-                <li>Active Directory</li>
-                <li>DNS / DHCP</li>
-                <li>GPO</li>
-            </ul>
-        </div>
+        <h3>Réseaux & Sécurité</h3>
+        <ul>
+            <li>Adressage IP, sous-réseaux, notions de VLAN.</li>
+            <li>Notions de pare-feu, accès distants, bonnes pratiques de sécurité.</li>
+            <li>Supervision basique et surveillance de l’état des systèmes.</li>
+        </ul>
 
-        <div class="card">
-            <h3>Réseaux</h3>
-            <ul>
-                <li>Subnetting / VLAN</li>
-                <li>Firewall</li>
-                <li>Switching & Routing</li>
-            </ul>
-        </div>
+        <h3>Outils & Méthodes</h3>
+        <ul>
+            <li>Gestion de tickets avec <strong>Jira</strong>.</li>
+            <li>Utilisation de <strong>Git / GitHub</strong>.</li>
+            <li>Documentation technique claire et structurée.</li>
+        </ul>
+    </section>
 
-        <div class="card">
-            <h3>Virtualisation</h3>
-            <ul>
-                <li>VMware / Proxmox</li>
-                <li>VirtualBox</li>
-                <li>Snapshots / Templates</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    <!-- PROJETS -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projets</h2>
 
+        <h3>Projet 1 – Infrastructure Windows Server</h3>
+        <ul>
+            <li>Installation d’un contrôleur de domaine <strong>Windows Server</strong>.</li>
+            <li>Création d’unités d’organisation, utilisateurs et groupes.</li>
+            <li>Mise en place de GPO simples (mot de passe, bureau, restrictions…).</li>
+            <li>Configuration de partages réseau et des droits NTFS.</li>
+        </ul>
 
-<!-- ▬▬▬ PROJETS ▬▬▬ -->
-<section id="projects" class="section">
-    <h2 class="section-title">Projets</h2>
+        <h3>Projet 2 – Mise en place de Jira</h3>
+        <ul>
+            <li>Installation et configuration de <strong>Jira</strong> sur un serveur.</li>
+            <li>Création et configuration de projets (bugs, demandes, incidents…).</li>
+            <li>Création de tickets, assignation aux bonnes personnes, suivi d’avancement, clôture.</li>
+            <li>Configuration des notifications e-mail : lorsque un ticket est créé et assigné,
+                la personne concernée reçoit un mail automatiquement.</li>
+        </ul>
+    </section>
 
-    <div class="grid three-cols">
-        <div class="card project-card">
-            <span class="badge">Windows Server</span>
-            <h3>Infrastructure ADDS</h3>
-            <p>Installation d’un domaine Active Directory + GPO + DHCP + DNS.</p>
-        </div>
+    <!-- EXPÉRIENCES -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Expériences</h2>
 
-        <div class="card project-card">
-            <span class="badge">Jira</span>
-            <h3>Serveur Jira</h3>
-            <p>Installation d’un serveur Jira sous Linux pour gestion de tickets.</p>
-        </div>
+        <h3>Alternant Administrateur Systèmes & Réseaux – Vermeg</h3>
+        <p><strong>2024 – 2026</strong> • La Défense</p>
+        <ul>
+            <li>Support informatique pour les utilisateurs (incidents et demandes).</li>
+            <li>Gestion et suivi des tickets avec <strong>Jira</strong>.</li>
+            <li>Participation à la gestion des comptes dans Active Directory.</li>
+            <li>Participation aux tâches de maintenance des serveurs et de l’infrastructure.</li>
+        </ul>
+    </section>
 
-        <div class="card project-card">
-            <span class="badge">Sécurité</span>
-            <h3>Durcissement système</h3>
-            <p>Firewall, MFA, audit de sécurité et durcissement Windows.</p>
-        </div>
-    </div>
-</section>
+    <!-- ENTREPRISE -->
+    <section id="entreprise" class="section">
+        <h2 class="section-title">Mon entreprise : Vermeg</h2>
 
+        <p>
+            <strong>Vermeg</strong> est une entreprise internationale spécialisée dans les solutions logicielles
+            pour la finance, les assurances et la gestion d’actifs.
+        </p>
 
-<!-- ▬▬▬ EXPÉRIENCES ▬▬▬ -->
-<section id="experience" class="section">
-    <h2 class="section-title">Expériences</h2>
+        <p>
+            Elle accompagne les acteurs financiers dans la modernisation de leurs systèmes d’information, la
+            digitalisation de leurs processus métiers et la mise en conformité avec les exigences réglementaires.
+        </p>
 
-    <div class="timeline">
+        <h3>Localisation (site de La Défense)</h3>
+        <iframe
+            src="https://www.google.com/maps?q=Vermeg+France+La+Défense&output=embed"
+            width="100%"
+            height="320"
+            style="border:0;border-radius: 14px;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
 
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <span class="timeline-date">2024 – 2026</span>
-                <h3>Alternant IT – Vermeg</h3>
-                <p>Support IT, administration AD, gestion des tickets et supervision.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
 
+        <h3>Atelier RGPD – CNIL</h3>
+        <p>
+            Certification confirmant ma compréhension des principes du RGPD, de la protection des données
+            personnelles et des bonnes pratiques de sécurité informatique.
+        </p>
+        <p><strong>Année :</strong> 2024</p>
+    </section>
 
-<!-- ▬▬▬ ENTREPRISE (AVEC IMAGES INTÉGRÉES DIRECTEMENT) ▬▬▬ -->
-<section id="entreprise" class="section">
-    <h2 class="section-title">Mon entreprise : Vermeg</h2>
+    <!-- CONTACT & CV -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact / CV</h2>
 
-    <p>Vermeg est une entreprise internationale spécialisée dans les solutions financières.</p>
+        <p>Pour toute question ou opportunité :</p>
+        <p><strong>Email :</strong> <a href="mailto:tarekrajabpro@gmail.com">tarekrajabpro@gmail.com</a></p>
 
-    <h3>Logo Vermeg</h3>
-    <img src="https://files.catbox.moe/8z3lae.png"
-         alt="Logo Vermeg"
-         style="width:230px;display:block;margin:20px auto;border-radius:12px;">
+        <br>
 
-    <h3>Bâtiment Vermeg</h3>
-    <img src="https://files.catbox.moe/hs6ytx.jpg"
-         alt="Bâtiment Vermeg"
-         style="width:100%;max-width:700px;border-radius:14px;display:block;margin:20px auto;">
-
-    <h3>Localisation</h3>
-    <iframe 
-        src="https://www.google.com/maps?q=Vermeg+France&output=embed"
-        width="100%" height="350"
-        style="border:0;border-radius:14px;margin-top:10px;">
-    </iframe>
-</section>
-
-
-<!-- ▬▬▬ CONTACT ▬▬▬ -->
-<section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
-    <p>Email : tarekrajabpro@gmail.com</p>
-</section>
+        <p><strong>Mon CV :</strong></p>
+        <p>
+            <a href="cv-tarek-rajab.pdf" download class="btn-primary">
+                Télécharger mon CV (PDF)
+            </a>
+        </p>
+        <p style="margin-top:10px;font-size:0.9rem;opacity:0.8;">
+            (Pense à déposer ton fichier <code>cv-tarek-rajab.pdf</code> dans le même dossier que ce fichier index)
+        </p>
+    </section>
 
 </body>
 </html>
