@@ -6,349 +6,232 @@
     <title>RAJAB Tarek | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- HERO + NAVBAR -->
-    <header class="hero" id="accueil">
-        <div class="hero-inner">
-
-            <!-- NAVBAR -->
-            <nav class="nav">
+<!-- =========================
+     NAVIGATION
+========================= -->
+<nav class="nav">
     <div class="logo">RAJAB <span>Tarek</span></div>
     <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#experiences">Expériences</a></li>
         <li><a href="entreprise.html">Entreprise</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-            <!-- HERO CONTENT -->
-            <div class="hero-content">
-                <!-- Colonne gauche -->
-                <div>
-                    <div class="hero-tag">
-                        BTS SIO SISR • Admin Systèmes &amp; Réseaux junior
-                    </div>
-                    <h1>Tarek RAJAB</h1>
-                    <p class="hero-desc">
-                        Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg.
-                        Passionné par l’infrastructure, la virtualisation, la sécurité et les
-                        environnements serveurs. Ce portfolio présente mon parcours, mes
-                        compétences et mes projets.
-                    </p>
 
-                    <div class="hero-actions">
-                        <a href="#projets" class="btn primary">Voir mes projets</a>
-                        <a href="#contact" class="btn ghost">Me contacter</a>
+
+<!-- =========================
+     HERO
+========================= -->
+<section class="hero" id="hero">
+    <div class="hero-inner">
+
+        <div class="hero-content">
+            <div>
+                <div class="hero-tag">BTS SIO SISR • Admin Systèmes & Réseaux junior</div>
+
+                <h1>Tarek RAJAB</h1>
+
+                <p class="hero-desc">
+                    Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg.
+                    Passionné par l’infrastructure, la virtualisation, la sécurité et les environnements serveurs.
+                    Ce portfolio présente mon parcours, mes compétences et mes projets.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projets" class="btn primary">Voir mes projets</a>
+                    <a href="#contact" class="btn ghost">Me contacter</a>
+                </div>
+            </div>
+
+            <!-- Carte profil rapide -->
+            <div class="hero-card">
+                <div class="hero-pill">Profil rapide</div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Années IT</span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-number">2024–2026</span>
+                        <span class="stat-label">Alternance</span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="stat-number">Infra • Secu</span>
+                        <span class="stat-label">SysAdmin</span>
                     </div>
                 </div>
-
-                <!-- Colonne droite : carte profil rapide -->
-                <aside class="hero-card">
-                    <div class="hero-pill">
-                        Profil rapide
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Années IT</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">2024–2026</span>
-                            <span class="stat-label">Alternance</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">Infra • Secu</span>
-                            <span class="stat-label">SysAdmin / Réseaux</span>
-                        </div>
-                    </div>
-                    <div class="hero-gradient"></div>
-                </aside>
             </div>
         </div>
-    </header>
 
-    <main>
+    </div>
+</section>
 
-        <!-- À PROPOS -->
-        <section id="apropos" class="section">
-            <div class="section-header">
-                <h2>À propos</h2>
-                <p>
-                    Je construis progressivement un profil d’administrateur systèmes &amp; réseaux
-                    orienté infrastructure Microsoft, virtualisation et sécurité des SI.
-                </p>
+
+<!-- =========================
+     À PROPOS
+========================= -->
+<section class="section" id="apropos">
+    <div class="section-header">
+        <h2>À propos</h2>
+        <p>Qui je suis, mon parcours et mes objectifs professionnels.</p>
+    </div>
+
+    <p>
+        Je construis progressivement un profil d’administrateur systèmes & réseaux orienté infrastructure Microsoft,
+        virtualisation et sécurité des environnements informatiques. Mon objectif est de devenir un professionnel
+        polyvalent capable d'intervenir sur des architectures complexes.
+    </p>
+
+    <div class="about-highlights" style="margin-top:20px;">
+        <span class="pill">BTS SIO SISR</span>
+        <span class="pill">Alternance Vermeg</span>
+        <span class="pill">Infra</span>
+        <span class="pill">Sécurité</span>
+    </div>
+</section>
+
+
+<!-- =========================
+     COMPÉTENCES
+========================= -->
+<section class="section" id="competences">
+    <div class="section-header">
+        <h2>Compétences</h2>
+        <p>Ce que je maîtrise et les technologies que j’utilise.</p>
+    </div>
+
+    <div class="grid three-cols skills-grid">
+        <div class="card">
+            <h3>Réseaux</h3>
+            <ul>
+                <li>VLAN, DHCP, DNS</li>
+                <li>Configuration routeurs / switches</li>
+                <li>Modèle OSI</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Systèmes</h3>
+            <ul>
+                <li>Windows Server</li>
+                <li>Active Directory / GPO</li>
+                <li>Linux (Ubuntu)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Outils & Sécurité</h3>
+            <ul>
+                <li>Jira</li>
+                <li>VMware / Virtualisation</li>
+                <li>Supervision & sauvegardes</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     PROJETS
+========================= -->
+<section class="section" id="projets">
+    <div class="section-header">
+        <h2>Projets</h2>
+        <p>Quelques projets techniques réalisés.</p>
+    </div>
+
+    <div class="grid three-cols">
+        <div class="card project-card">
+            <span class="badge">Windows Server</span>
+            <h3>Active Directory complet</h3>
+            <p>Installation et configuration d’un domaine, GPO, utilisateurs, services réseau.</p>
+            <p class="tech">AD DS • DNS • DHCP</p>
+        </div>
+
+        <div class="card project-card">
+            <span class="badge">Linux / Réseau</span>
+            <h3>Serveur Ubuntu + services</h3>
+            <p>Mise en place d’un serveur Linux avec services réseau, automatisations et scripts.</p>
+            <p class="tech">Ubuntu • SSH • Cron</p>
+        </div>
+
+        <div class="card project-card">
+            <span class="badge">Outils</span>
+            <h3>Projet Jira</h3>
+            <p>Installation complète d’un serveur Jira Software sous Linux pour gestion de projets.</p>
+            <p class="tech">Jira • Linux • PostgreSQL</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================
+     EXPÉRIENCES
+========================= -->
+<section class="section" id="experiences">
+    <div class="section-header">
+        <h2>Expériences</h2>
+        <p>Mon parcours professionnel.</p>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2024 – 2026</div>
+                <h3>Alternant Administrateur Systèmes & Réseaux – Vermeg</h3>
+                <p>Participation à la gestion de l’infrastructure, support, supervision et projets internes.</p>
             </div>
+        </div>
 
-            <div class="grid two-cols">
-                <div class="card">
-                    <h3>Qui je suis</h3>
-                    <p>
-                        Je suis Tarek RAJAB, 19 ans, actuellement en BTS SIO option SISR en
-                        alternance chez Vermeg. J’aime comprendre comment tout fonctionne
-                        « sous le capot » : systèmes, réseaux, services d’infrastructure et
-                        cybersécurité au sens large.
-                    </p>
-                    <p>
-                        Mon objectif à court terme est de devenir administrateur systèmes &
-                        réseaux fiable et polyvalent, capable d’installer, sécuriser et
-                        maintenir des infrastructures Windows Server et des environnements
-                        virtualisés en production.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>Points forts</h3>
-                    <div class="about-highlights">
-                        <span class="pill">Windows Server &amp; Active Directory</span>
-                        <span class="pill">Virtualisation &amp; environnements de test</span>
-                        <span class="pill">Fondamentaux Réseaux (TCP/IP, VLAN…)</span>
-                        <span class="pill">Culture sécurité &amp; bonnes pratiques</span>
-                        <span class="pill">Gestion de tickets (Jira)</span>
-                        <span class="pill">Autodidacte &amp; curieux</span>
-                    </div>
-                </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2023 – 2024</div>
+                <h3>Bac Pro SN RISC</h3>
+                <p>Diplôme obtenu avec spécialisation en réseaux et systèmes communicants.</p>
             </div>
-        </section>
+        </div>
 
-        <!-- FORMATION -->
-        <section id="formation" class="section">
-            <div class="section-header">
-                <h2>Formation</h2>
-                <p>
-                    Un parcours orienté systèmes &amp; réseaux, avec une forte dimension
-                    pratique grâce à l’alternance.
-                </p>
-            </div>
+    </div>
+</section>
 
-            <div class="grid two-cols">
-                <div class="card">
-                    <h3>Parcours scolaire</h3>
-                    <ul>
-                        <li>
-                            <strong>2024 – 2026 :</strong> BTS SIO option SISR (en cours) –
-                            CFA ITIS, en alternance chez Vermeg.
-                        </li>
-                        <li>
-                            <strong>2024 :</strong> Bac Pro SN – option RISC
-                            (Réseaux Informatiques et Systèmes Communicants),
-                            Lycée Georges Brassens, Évry-Courcouronnes.
-                        </li>
-                        <li>
-                            <strong>Diplôme national du Brevet</strong> – Collège (niveau 3e).
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="card">
-                    <h3>Ce que j’y développe</h3>
-                    <ul>
-                        <li>Base solide en administration systèmes et réseaux.</li>
-                        <li>Montage et sécurisation d’infrastructures Windows Server.</li>
-                        <li>Scripts &amp; automatisation (scripts de base, outils d’admin).</li>
-                        <li>Culture IT professionnelle : ITIL, gestion d’incidents, tickets.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<!-- =========================
+     CONTACT
+========================= -->
+<section class="section" id="contact">
+    <div class="section-header">
+        <h2>Contact</h2>
+        <p>Vous pouvez me joindre ici.</p>
+    </div>
 
-        <!-- COMPÉTENCES -->
-        <section id="competences" class="section">
-            <div class="section-header">
-                <h2>Compétences</h2>
-                <p>
-                    Un socle orienté vers l’administration de serveurs, la gestion des réseaux
-                    et la sécurité opérationnelle.
-                </p>
-            </div>
+    <div class="contact-card">
+        <p>Envie d’échanger ou de collaborer ?</p>
+        <a class="contact-email" href="mailto:tarekrajabpro@gmail.com">
+            tarekrajabpro@gmail.com
+        </a>
+    </div>
+</section>
 
-            <div class="grid three-cols skills-grid">
-                <div class="card">
-                    <h3>Systèmes &amp; virtualisation</h3>
-                    <ul>
-                        <li>Windows Server (AD DS, DNS, DHCP, GPO, partages de fichiers).</li>
-                        <li>Administration de base d’Ubuntu / Debian.</li>
-                        <li>Virtualisation (VMware / VirtualBox, environnements de labo).</li>
-                        <li>Gestion des sauvegardes et restaurations simples.</li>
-                    </ul>
-                </div>
 
-                <div class="card">
-                    <h3>Réseaux &amp; sécurité</h3>
-                    <ul>
-                        <li>Adressage IP, VLAN, routage simple, DHCP, DNS.</li>
-                        <li>Segmentation, règles de base firewall / filtrage.</li>
-                        <li>Durcissement de serveurs (mises à jour, droits, GPO).</li>
-                        <li>Sensibilisation RGPD et protection des données.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Outils &amp; collaboration</h3>
-                    <ul>
-                        <li>Jira (gestion de tickets, flux de travail, suivi).</li>
-                        <li>Git / GitHub pour versionner les projets.</li>
-                        <li>Outils de bureautique Microsoft 365.</li>
-                        <li>Communication claire avec les équipes support &amp; métier.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJETS -->
-        <section id="projets" class="section">
-            <div class="section-header">
-                <h2>Projets</h2>
-                <p>
-                    Quelques projets significatifs qui illustrent ce que je sais
-                    mettre en place en environnement réel ou de labo.
-                </p>
-            </div>
-
-            <div class="grid two-cols">
-                <!-- Projet Windows Server -->
-                <article class="card project-card">
-                    <span class="badge">Infra Windows</span>
-                    <h3>Infrastructure Windows Server &amp; Active Directory</h3>
-                    <p>
-                        Mise en place d’un domaine Active Directory complet pour une
-                        petite entreprise fictive : gestion centralisée des comptes,
-                        des permissions et des postes clients.
-                    </p>
-                    <ul>
-                        <li>Installation et configuration de Windows Server en VM.</li>
-                        <li>Rôle AD DS, DNS, DHCP et création de l’arborescence AD.</li>
-                        <li>Group Policies (GPO) pour sécuriser et standardiser les postes.</li>
-                        <li>Partages de fichiers, droits NTFS et gestion des profils.</li>
-                    </ul>
-                    <p class="tech">
-                        Technologies : Windows Server, AD DS, DNS, DHCP, GPO, VMware.
-                    </p>
-                </article>
-
-                <!-- Projet Jira -->
-                <article class="card project-card">
-                    <span class="badge">Gestion de tickets</span>
-                    <h3>Plateforme de tickets avec Jira</h3>
-                    <p>
-                        Mise en place et configuration d’un Jira pour gérer les demandes
-                        et incidents IT, avec des workflows adaptés et des notifications
-                        mail automatiques.
-                    </p>
-                    <ul>
-                        <li>Installation de Jira sur une machine virtuelle dédiée.</li>
-                        <li>Création des projets, types de tickets et champs personnalisés.</li>
-                        <li>
-                            Configuration des workflows : création → assignation →
-                            traitement → clôture.
-                        </li>
-                        <li>
-                            Règles de notifications mail pour prévenir les personnes
-                            concernées dès qu’un ticket est créé ou modifié.
-                        </li>
-                    </ul>
-                    <p class="tech">
-                        Technologies : Jira, VM Linux / Windows, SMTP, gestion de projets.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!-- EXPÉRIENCES + ENTREPRISE -->
-        <section id="experiences" class="section">
-            <div class="section-header">
-                <h2>Expériences &amp; entreprise</h2>
-                <p>
-                    Mon alternance me permet de voir le quotidien d’une DSI dans un
-                    groupe international du secteur financier.
-                </p>
-            </div>
-
-            <div class="grid two-cols">
-                <!-- Mon rôle -->
-                <div class="card">
-                    <h3>Alternant Admin Systèmes &amp; Réseaux – Vermeg</h3>
-                    <p>
-                        Depuis 2024, je suis en alternance chez Vermeg en tant
-                        qu’administrateur systèmes &amp; réseaux junior.
-                    </p>
-                    <ul>
-                        <li>Support aux équipes internes et gestion des tickets via Jira.</li>
-                        <li>Gestion de comptes utilisateurs et droits sur les serveurs.</li>
-                        <li>Participation aux projets Windows Server et à leur sécurisation.</li>
-                        <li>Contribution au suivi et à la documentation des procédures.</li>
-                    </ul>
-                </div>
-
-                <!-- L'entreprise -->
-                <div class="card">
-                    <h3>Vermeg – l’entreprise</h3>
-                    <p>
-                        Vermeg est un éditeur de logiciels spécialisé dans la finance
-                        (banque, assurance, gestion d’actifs). Le groupe propose des
-                        solutions pour la gestion de portefeuilles, l’assurance, la
-                        réglementation et la digitalisation des services financiers.
-                    </p>
-                    <p>
-                        Fondée en 1993 par Badreddine Ouali, Vermeg est aujourd’hui un
-                        acteur international avec un siège à Amsterdam et des bureaux
-                        dans plusieurs pays. Je travaille au sein des équipes IT internes,
-                        au cœur de ces environnements financiers exigeants.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CERTIFICATIONS -->
-        <section id="certifications" class="section">
-            <div class="section-header">
-                <h2>Certifications</h2>
-                <p>
-                    Des validations officielles qui confirment mes connaissances,
-                    notamment sur la protection des données.
-                </p>
-            </div>
-
-            <div class="card certification-list">
-                <h3>Atelier RGPD – CNIL</h3>
-                <p>
-                    Certification de l’atelier RGPD de la CNIL, obtenue en 2024.
-                    Elle valide ma compréhension des principes de conformité RGPD,
-                    de la protection des données personnelles et des bonnes pratiques
-                    de sécurité liées aux traitements de données.
-                </p>
-                <span class="certification-date">2024</span>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-            <div class="section-header">
-                <h2>Contact</h2>
-                <p>
-                    Un projet, une opportunité d’alternance ou un futur poste ?
-                    N’hésite pas à me contacter.
-                </p>
-            </div>
-
-            <div class="contact-card">
-                <p>Pour échange professionnel, questions ou opportunités :</p>
-                <a class="contact-email"
-                   href="mailto:tarekrajabpro@gmail.com">
-                    tarekrajabpro@gmail.com
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        © 2025 – Tarek RAJAB. Tous droits réservés.
-    </footer>
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="footer">
+    © 2025 – Tarek RAJAB. Tous droits réservés.
+</footer>
 
 </body>
 </html>
-
-
