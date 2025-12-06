@@ -1,54 +1,291 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RAJAB Tarek | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<header>
-    <nav>
-        <h1 class="logo">TAREK.</h1>
-        <ul>
-            <li><a href="#hero">Accueil</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
-<section id="hero" class="hero">
-    <div class="hero-left">
-        <h2 class="title">Tarek RAJAB</h2>
-        <p class="subtitle">Administrateur systèmes & réseaux junior</p>
+<!-- =========================
+     HERO + NAV
+     ========================= -->
+<section class="hero" id="home">
+    <div class="hero-inner">
 
-        <p class="desc">
-            Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg. 
-            Passionné par l’infrastructure, la virtualisation, la sécurité 
-            et les environnements serveurs. Ce portfolio présente mon parcours, 
-            mes compétences et mes projets.
-        </p>
+        <!-- NAVBAR -->
+        <header class="nav">
+            <div class="logo"><span>RAJAB</span> Tarek</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
 
-        <div class="buttons">
-            <a href="#projets" class="btn primary">Voir mes projets</a>
-            <a href="#contact" class="btn secondary">Me contacter</a>
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+            <!-- Gauche -->
+            <div>
+                <div class="hero-tag">BTS SIO SISR • Admin systèmes & réseaux junior</div>
+                <h1>Tarek RAJAB</h1>
+                <p class="hero-desc">
+                    Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg.
+                    Passionné par l’infrastructure, la virtualisation, la sécurité
+                    et les environnements serveurs. Ce portfolio présente mon parcours,
+                    mes compétences et mes projets.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">Voir mes projets</a>
+                    <a href="#contact" class="btn ghost">Me contacter</a>
+                </div>
+            </div>
+
+            <!-- Droite : carte stats -->
+            <div class="hero-card">
+                <div class="hero-pill">
+                    Infra • Réseaux • Sécurité
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Années de formation IT</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2024–2026</span>
+                        <span class="stat-label">Alternance chez Vermeg</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">IT</span>
+                        <span class="stat-label">SysAdmin & Réseaux</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="hero-card">
-        <p><b>Spécialisation</b><br>Infrastructure • Réseaux • Sécurité</p>
-        <p><b>Années de formation</b><br>2+</p>
-        <p><b>Alternance</b><br>2024 – 2026<br>Vermeg</p>
-        <p><b>Domaines</b><br>IT / SysAdmin / Réseaux</p>
+        <div class="hero-gradient"></div>
     </div>
 </section>
 
-<footer>
-    <p>© 2025 – Tarek RAJAB. Tous droits réservés.</p>
+<!-- =========================
+     A PROPOS
+     ========================= -->
+<section class="section" id="about">
+    <div class="section-header">
+        <h2>À propos</h2>
+        <p>
+            Quelques informations rapides pour mieux comprendre mon profil et ma vision
+            du métier d’administrateur systèmes & réseaux.
+        </p>
+    </div>
+
+    <div class="grid two-cols">
+        <div>
+            <p>
+                Je m’appelle Tarek RAJAB, passionné par les systèmes d’information et
+                plus particulièrement par l’administration systèmes & réseaux.
+            </p>
+            <p>
+                J’aime concevoir, déployer et sécuriser des infrastructures fiables.
+                J’apprécie aussi beaucoup la résolution de problèmes techniques et
+                le fait de rendre les environnements plus stables pour les utilisateurs.
+            </p>
+        </div>
+
+        <div class="about-highlights">
+            <span class="pill">Administration Windows Server</span>
+            <span class="pill">Virtualisation & VMware</span>
+            <span class="pill">Gestion Active Directory</span>
+            <span class="pill">Services réseau : DHCP / DNS</span>
+            <span class="pill">Supervision & sécurité</span>
+            <span class="pill">Support utilisateurs</span>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     FORMATION
+     ========================= -->
+<section class="section" id="formation">
+    <div class="section-header">
+        <h2>Formation</h2>
+        <p>Mon parcours scolaire orienté vers les systèmes, réseaux et la cybersécurité.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>BTS SIO option SISR</h3>
+            <p>Lycée Georges Brassens – Évry-Courcouronnes</p>
+            <ul>
+                <li>Spécialisation en administration systèmes & réseaux.</li>
+                <li>Découverte des environnements Windows & Linux.</li>
+                <li>Projets orientés infrastructure, virtualisation et sécurité.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     COMPÉTENCES
+     ========================= -->
+<section class="section" id="skills">
+    <div class="section-header">
+        <h2>Compétences</h2>
+        <p>Un aperçu des environnements, outils et technologies que j’utilise.</p>
+    </div>
+
+    <div class="grid three-cols skills-grid">
+        <div class="card">
+            <h3>Systèmes & virtualisation</h3>
+            <ul>
+                <li>Windows Server (AD, DHCP, DNS, GPO)</li>
+                <li>Virtualisation : VMware, VirtualBox</li>
+                <li>Linux (Debian, Ubuntu) – bases administration</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Réseaux & sécurité</h3>
+            <ul>
+                <li>Adressage IP, VLAN, routage de base</li>
+                <li>Services réseau : DNS, DHCP</li>
+                <li>Notions de pare-feu & segmentation</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Outils & développement</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Suivi de tickets (JIRA)</li>
+                <li>HTML / CSS (sites vitrines, portfolio)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     PROJETS
+     ========================= -->
+<section class="section" id="projects">
+    <div class="section-header">
+        <h2>Projets</h2>
+        <p>Quelques projets concrets réalisés pendant ma formation et mon alternance.</p>
+    </div>
+
+    <div class="grid two-cols">
+        <div class="card project-card">
+            <span class="badge">Windows Server</span>
+            <h3>Déploiement d’un domaine Active Directory</h3>
+            <p>
+                Installation et configuration d’un contrôleur de domaine :
+                création d’unités d’organisation, gestion des utilisateurs, GPO,
+                configuration de DHCP et DNS pour un réseau interne.
+            </p>
+            <p class="tech">Technos : Windows Server, AD DS, DHCP, DNS, GPO</p>
+        </div>
+
+        <div class="card project-card">
+            <span class="badge">JIRA</span>
+            <h3>Mise en place d’un serveur JIRA</h3>
+            <p>
+                Installation, configuration et utilisation de JIRA pour la gestion
+                de tickets : création, assignation, suivi d’avancement, clôture,
+                et notifications par mail.
+            </p>
+            <p class="tech">Technos : JIRA, Linux, Reverse proxy, SMTP</p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     EXPÉRIENCES
+     ========================= -->
+<section class="section" id="experiences">
+    <div class="section-header">
+        <h2>Expériences</h2>
+        <p>Mes expériences les plus significatives dans le domaine de l’IT.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 – 2026</div>
+                        <h3>Alternant – Administrateur systèmes & réseaux</h3>
+                        <p>VERMEG</p>
+                        <p>
+                            Participation à la gestion des serveurs, support aux équipes,
+                            suivi des incidents et contribution à l’amélioration continue
+                            de l’infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     CERTIFICATIONS
+     ========================= -->
+<section class="section" id="certifications">
+    <div class="section-header">
+        <h2>Certifications</h2>
+        <p>Une première base sur la conformité et la protection des données.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Atelier RGPD – CNIL</h3>
+            <p>
+                Certification validant ma connaissance des principes de conformité RGPD,
+                de la protection des données personnelles et des bonnes pratiques de
+                sécurité informatique.
+            </p>
+            <p class="tech">Année : 2024</p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     CONTACT
+     ========================= -->
+<section class="section" id="contact">
+    <div class="section-header">
+        <h2>Contact</h2>
+        <p>Pour un échange professionnel, une opportunité d’alternance ou un projet.</p>
+    </div>
+
+    <div class="contact-card">
+        <p>
+            N’hésitez pas à me joindre pour toute question ou proposition.
+            Je suis ouvert aux discussions autour des systèmes, réseaux et de la sécurité.
+        </p>
+        <a href="mailto:tarekrajabpro@gmail.com" class="contact-email">
+            tarekrajabpro@gmail.com
+        </a>
+    </div>
+</section>
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+<footer class="footer">
+    © 2025 – Tarek RAJAB. Tous droits réservés.
 </footer>
 
 </body>
