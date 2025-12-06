@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+V<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Tarek RAJAB</title>
+    <title>Portfolio – RAJAB Tarek</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,94 +25,143 @@
 
 <!-- ▬▬▬ HERO ▬▬▬ -->
 <section id="hero" class="hero section">
-    <h1>Tarek RAJAB</h1>
-    <p class="hero-desc">
-        Étudiant en BTS SIO SISR et alternant chez Vermeg.<br>
-        Passionné par l'infrastructure, la virtualisation, la sécurité et les environnements serveurs.
-    </p>
+    <div class="hero-content">
+        <div>
+            <h1>Tarek RAJAB</h1>
+            <p class="hero-desc">
+                Étudiant en BTS SIO SISR & Alternant Administrateur Systèmes chez Vermeg.<br>
+                Passionné par l’infrastructure, les réseaux, la virtualisation et la cybersécurité.
+            </p>
 
-    <div class="hero-actions">
-        <a href="#projects" class="btn primary">Voir mes projets</a>
-        <a href="#contact" class="btn ghost">Me contacter</a>
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary">Voir mes projets</a>
+                <a href="#contact" class="btn ghost">Me contacter</a>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ▬▬▬ À PROPOS ▬▬▬ -->
 <section id="about" class="section">
-    <h2>À propos</h2>
-
+    <h2 class="section-title">À propos de moi</h2>
     <p>
-        Je construis un profil orienté systèmes, réseaux, virtualisation et cybersécurité.<br>
-        Je souhaite devenir Administrateur Systèmes & Réseaux.
+        Je suis un étudiant motivé en BTS SIO option SISR, passionné par les systèmes, réseaux et la cybersécurité.
+        Mon objectif : devenir Administrateur Systèmes & Réseaux.
     </p>
 
-    <h3>Diplômes :</h3>
-    <ul>
-        <li><strong>Bac Pro SN RISC</strong> – 2022</li>
-        <li><strong>BTS SIO SISR</strong> – 2024 → 2026</li>
-    </ul>
+    <div class="about-highlights">
+        <span class="pill">BTS SIO SISR (2024–2026)</span>
+        <span class="pill">Bac Pro SN RISC – 2024</span>
+        <span class="pill">Alternant chez Vermeg</span>
+    </div>
 </section>
 
 <!-- ▬▬▬ COMPÉTENCES ▬▬▬ -->
 <section id="skills" class="section">
-    <h2>Compétences</h2>
+    <h2 class="section-title">Compétences</h2>
 
-    <ul>
-        <li>Administration Windows Server</li>
-        <li>Active Directory / DNS / DHCP</li>
-        <li>Virtualisation (Hyper-V, VMware)</li>
-        <li>Gestion de tickets</li>
-        <li>Support IT & Maintenance</li>
-        <li>Linux / Réseaux / Sécurité</li>
-    </ul>
+    <div class="grid three-cols skills-grid">
+        <div class="card">
+            <h3>Windows Server</h3>
+            <p>AD, DNS, DHCP, GPO, gestion des utilisateurs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Virtualisation</h3>
+            <p>Hyper-V, VMware, machines virtuelles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Réseaux & Sécurité</h3>
+            <p>TCP/IP, VLAN, Firewall, supervision, bonnes pratiques.</p>
+        </div>
+    </div>
 </section>
 
 <!-- ▬▬▬ PROJETS ▬▬▬ -->
 <section id="projects" class="section">
-    <h2>Projets</h2>
+    <h2 class="section-title">Projets</h2>
 
-    <ul>
-        <li><strong>Installation & gestion d’un Windows Server complet</strong> (AD, GPO, DHCP, DNS…)</li>
-        <li><strong>Déploiement Jira Software</strong> (installation, configuration, utilisateurs)</li>
-    </ul>
+    <div class="grid three-cols">
+        <div class="card project-card">
+            <span class="badge">Windows Server</span>
+            <h3>Déploiement d’un domaine complet</h3>
+            <p>Installation ADDS, DHCP, DNS, GPO, OU, utilisateurs.</p>
+        </div>
+
+        <div class="card project-card">
+            <span class="badge">Jira</span>
+            <h3>Installation & Configuration Jira</h3>
+            <p>Serveur Jira interne, création de projets, workflows, automation mails.</p>
+        </div>
+
+        <div class="card project-card">
+            <span class="badge">Virtualisation</span>
+            <h3>Machines virtuelles</h3>
+            <p>Mise en place d’environnements de test Linux / Windows.</p>
+        </div>
+    </div>
 </section>
 
 <!-- ▬▬▬ EXPÉRIENCES ▬▬▬ -->
 <section id="experience" class="section">
-    <h2>Expériences</h2>
+    <h2 class="section-title">Expériences</h2>
 
-    <p><strong>Alternant Administrateur Systèmes & Réseaux – Vermeg (2024–2026)</strong></p>
-    <ul>
-        <li>Support IT niveau 1 & 2</li>
-        <li>Gestion des tickets via Jira</li>
-        <li>Monitoring & maintenance serveurs</li>
-        <li>Virtualisation & supervision</li>
-    </ul>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2024 – 2026</span>
+            <div class="timeline-content">
+                <h3>Alternant Administrateur Systèmes – Vermeg</h3>
+                <p>
+                    Support informatique, gestion Jira, virtualisation, monitoring, maintenance serveurs,
+                    sécurité et gestion des utilisateurs.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- ▬▬▬ ENTREPRISE ▬▬▬ -->
 <section id="entreprise" class="section">
-    <h2>Mon entreprise : Vermeg</h2>
+    <h2 class="section-title">Mon entreprise : Vermeg</h2>
 
     <p>
-        Vermeg est une entreprise internationale spécialisée dans les solutions financières,
-        fondée en 2002. Elle développe des logiciels pour les banques, les assurances et la gestion d'actifs.
+        Vermeg est une entreprise internationale spécialisée dans les solutions logicielles pour le secteur financier,
+        fondée en 2002. Elle propose des solutions pour les banques, assurances et gestionnaires d’actifs.
     </p>
 
-    <h3>Logo Vermeg</h3>
-    <img style="width:260px;margin-bottom:20px;"
-    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAACZg3cPAAAB5klEQVR4nO3UsQ3CMBAF0XnCv0nZjSoIk/9iZll2FZnIoPSFq+qDRqa8Z9YuqbW9u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u6/2yW0dcQa/wetLX6A+op918DxEfWkqrr7FtFj0Fs1r14n0G3Qv9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qj9E5SnIC7Qh9G5Sn4C7Qn+uZNo2L9Y2XjdAAAAAElFTkSuQmCC">
+    <h3>Logo :</h3>
+    <img src="https://files.catbox.moe/8z3lae.png"
+         alt="Logo Vermeg"
+         style="width:230px;display:block;margin:20px auto;">
 
-    <h3>Bâtiment Vermeg</h3>
-    <img style="width:100%;max-width:700px;border-radius:12px;"
-    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhIVEhUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMuNygtLisBCgoKDg0OFxAQGC0dHR0tKy0tKy0tKy0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBBAcDAv/EADcQAAIBAwMCBQMDAwMFAAAAAAECAwAEEQUSITFBEyJRYXEygZGhsRQjQlKxwdHh8BUzYnKS4f/EABoBAQADAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAtEQEAAgIBAwIEBwAAAAAAAAABAhEDBBIhMUEFE1FhcYGRoSJCscHR8P/aAAwDAQACEQMRAD8A9xo6M8lXIKQGzRqckgknIzmsWg0eqY10z2GEoJPkkknJznqKjttGmjZo2o9Pp99mLDLJJJJyVJJJJJPGSaTqk6uhnUtVTTTtRy5HJJJJJJPAJJNO0Yy6lTqHqjbo2TTsYu9TfVd2c8kkkk8kkg+lN2W91TW3ZVW2c5ySSSSSPBJIrpZrU9PG2mJo2VZvD5TDJJJJPJJJJzmk3TTp1qV6jZ9Ymq/4bh8sxSSSTySSST5kn0LaV6u46vVyg42w5JJJJJJJJ/OaWl6rUxvZrTqFySSSSSSST8zT3pOtWKr1o2dYMvJ5o3d6o04RpONn0jqGgGuvFKdQ6ycpJJJJJJPIJJPNMGtNPRWvRq9tWiWqLbuznJJJJJJJPJJJzTjap6vW9tGk1Xq23nJJJJJJJJJJ4knzNPWzTWvRq9rWiGvLbuznJJJJJJJJJJJJPNOTXNNPVWvRrdrWiGtLbuzkkknJJJJJJJJxTTddPUNPWr3rWyGtLbuznJJJJJJJJJJJJOTNLdNPUNPWp9LW2GtLbuznJJJJJJJJJJJJOc0s+pL6kJZIykksv/9k=">
+    <h3>Bâtiment Vermeg :</h3>
+    <img src="https://files.catbox.moe/hs6ytx.jpg"
+         alt="Bâtiment Vermeg"
+         style="width:100%;max-width:720px;border-radius:16px;display:block;margin:20px auto;">
+
+    <h3>Localisation :</h3>
+    <iframe
+        width="100%"
+        height="350"
+        style="border:0;border-radius:14px;margin-top:10px;"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=Vermeg+France&key=AIzaSyDUMMYKEY123456">
+    </iframe>
 </section>
 
 <!-- ▬▬▬ CONTACT ▬▬▬ -->
 <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email : tarekrajabpro@gmail.com</p>
+    <h2 class="section-title">Contact</h2>
+    <p>Si vous souhaitez me contacter :</p>
+    <a class="contact-email" href="mailto:tarekrajabpro@gmail.com">tarekrajabpro@gmail.com</a>
 </section>
+
+<footer class="footer">
+    © 2025 – Portfolio de Tarek RAJAB
+</footer>
 
 </body>
 </html>
