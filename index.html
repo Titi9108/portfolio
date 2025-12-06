@@ -3,200 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAJAB Tarek | Portfolio</title>
+    <title>Portfolio – Tarek RAJAB</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<header class="nav">
-    <div class="logo"><span>RAJAB</span> Tarek</div>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="logo">RAJAB <span>Tarek</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <ul class="nav-links">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#formation">Formation</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#experiences">Expériences</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</header>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div>
+                    <div class="hero-tag">BTS SIO SISR – Admin Systèmes & Réseaux junior</div>
+                    <h1>Tarek RAJAB</h1>
+                    <p class="hero-desc">
+                        Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg. Passionné par 
+                        l’infrastructure, la virtualisation, la sécurité et les environnements serveurs.
+                        Ce portfolio présente mon parcours, mes compétences et mes projets.
+                    </p>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-    <div class="hero-inner">
-
-        <div class="hero-content">
-            <div>
-                <div class="hero-tag">BTS SIO SISR – Admin Systèmes & Réseaux junior</div>
-                <h1>Tarek RAJAB</h1>
-
-                <p class="hero-desc">
-                    Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg.
-                    Passionné par l’infrastructure, la virtualisation, la sécurité et les environnements serveurs.
-                    Ce portfolio présente mon parcours, mes compétences et mes projets.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary">Voir mes projets</a>
-                    <a href="#contact" class="btn ghost">Me contacter</a>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">Voir mes projets</a>
+                        <a href="#contact" class="btn ghost">Me contacter</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="hero-card">
-                <div class="hero-pill">Infrastructure • Réseaux • Sécurité</div>
+                <!-- CARTE DE DROITE -->
+                <div class="hero-card">
+                    <div class="hero-pill">Profil rapide</div>
 
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">2+</span>
-                        <span class="stat-label">Années de formation IT</span>
-                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Années IT</span>
+                        </div>
 
-                    <div class="stat">
-                        <span class="stat-number">2024–2026</span>
-                        <span class="stat-label">Alternance</span>
-                    </div>
+                        <div class="stat">
+                            <span class="stat-number">2024–2026</span>
+                            <span class="stat-label">Alternance</span>
+                        </div>
 
-                    <div class="stat">
-                        <span class="stat-number">Vermeg</span>
-                        <span class="stat-label">IT / SysAdmin & Réseaux</span>
+                        <div class="stat">
+                            <span class="stat-number">Infra • Secu</span>
+                            <span class="stat-label">SysAdmin</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section">
-    <div class="section-header">
-        <h2>À propos</h2>
-        <p>Présentation rapide de mon profil.</p>
-    </div>
-
-    <div class="card">
-        <p>
-            Passionné par les systèmes et réseaux, j’aime particulièrement la virtualisation,
-            la cybersécurité et l’administration de serveurs Windows & Linux.
-        </p>
-    </div>
-</section>
-
-<!-- ================= FORMATION ================= -->
-<section id="formation" class="section">
-    <div class="section-header">
-        <h2>Formation</h2>
-    </div>
-
-    <div class="card">
-        <h3>BTS SIO SISR</h3>
-        <p>ITIS Évry – 2024/2026</p>
-    </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="section">
-    <div class="section-header">
-        <h2>Compétences</h2>
-    </div>
-
-    <div class="grid three-cols skills-grid">
-
-        <div class="card">
-            <h3>Windows Server</h3>
-            <p>ADDS, DNS, DHCP, GPO, gestion utilisateurs</p>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>À propos</h2>
+            <p>Un aperçu rapide de mon parcours et mes objectifs professionnels.</p>
         </div>
 
         <div class="card">
-            <h3>Linux</h3>
-            <p>Gestion système, services réseau, permissions</p>
-        </div>
-
-        <div class="card">
-            <h3>Jira</h3>
             <p>
-                Installation, configuration, création/assignation tickets,
-                automatisation d’emails.
+                Actuellement étudiant en BTS SIO SISR, je me spécialise dans l’administration systèmes, 
+                réseaux, virtualisation et sécurité. Je développe également des compétences dans les 
+                environnements Linux, Windows Server et cloud.
             </p>
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section">
-    <div class="section-header">
-        <h2>Projets</h2>
-    </div>
-
-    <div class="grid two-cols">
-
-        <div class="card project-card">
-            <span class="badge">Système</span>
-            <h3>Installation et configuration Windows Server</h3>
-            <p>Mise en place AD, DNS, DHCP, GPO.</p>
+    <!-- COMPÉTENCES -->
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h2>Compétences</h2>
+            <p>Technos, outils & domaines que je maîtrise.</p>
         </div>
 
-        <div class="card project-card">
-            <span class="badge">Gestion</span>
-            <h3>Projet Jira</h3>
-            <p>Création, suivi & automatisation des tickets.</p>
+        <div class="grid three-cols skills-grid">
+            <div class="card"><h3>Systèmes</h3><p>Linux, Windows Server, Active Directory</p></div>
+            <div class="card"><h3>Réseaux</h3><p>TCP/IP, VLAN, DHCP, DNS, Sécurité</p></div>
+            <div class="card"><h3>Outils</h3><p>VMware, Proxmox, Docker, GitHub</p></div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Projets</h2>
+            <p>Quelques réalisations techniques et pratiques.</p>
         </div>
 
-    </div>
-</section>
+        <div class="grid three-cols">
+            <div class="card"><h3>Projet 1</h3><p>Déploiement AD + GPO + DNS</p></div>
+            <div class="card"><h3>Projet 2</h3><p>Infrastructure virtuelle sous Proxmox</p></div>
+            <div class="card"><h3>Projet 3</h3><p>Containerisation avec Docker</p></div>
+        </div>
+    </section>
 
-<!-- ================= EXPERIENCES ================= -->
-<section id="experiences" class="section">
-    <div class="section-header">
-        <h2>Expériences</h2>
-    </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="section-header">
+            <h2>Expériences</h2>
+        </div>
 
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>Tech Support – Extra Laserbowl</h3>
-                <p>Maintenance, réseaux, assistance clients.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Administrateur systèmes & réseaux (Alternance)</h3>
+                    <p>Vermeg – 2024 à aujourd’hui</p>
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2>Contact</h2>
+        </div>
 
-<!-- ================= CERTIFICATIONS ================= -->
-<section id="certifications" class="section">
-    <div class="section-header">
-        <h2>Certifications</h2>
-    </div>
+        <div class="contact-card">
+            <p>Une question, un projet, une opportunité ?</p>
+            <a href="mailto:tarekrajabpro@gmail.com" class="contact-email">tarekrajabpro@gmail.com</a>
+        </div>
+    </section>
 
-    <div class="card">
-        <h3>Atelier RGPD – CNIL</h3>
-        <p>Certification obtenue en 2024.</p>
-    </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section">
-    <div class="section-header">
-        <h2>Contact</h2>
-    </div>
-
-    <div class="contact-card">
-        <p>Mail professionnel :</p>
-        <a class="contact-email" href="mailto:tarekrajabpro@gmail.com">tarekrajabpro@gmail.com</a>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-    © 2025 – Tarek RAJAB. Tous droits réservés.
-</footer>
+    <footer class="footer">
+        © 2025 – Tarek RAJAB. Tous droits réservés.
+    </footer>
 
 </body>
 </html>
