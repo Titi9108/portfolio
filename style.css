@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background: radial-gradient(circle at top, #1e1b4b, #020617);
     color: white;
+    scroll-behavior: smooth;
 }
 
 /* ▬▬▬ NAVBAR ▬▬▬ */
@@ -48,21 +49,25 @@ body {
     overflow: hidden;
 }
 
-#hero h1 {
-    font-size: 48px;
+/* ▬▬▬ BULLES ▬▬▬ */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: float 12s infinite alternate;
 }
 
-#hero h2 {
-    margin: 15px 0;
-    color: #a855f7;
+.b1 { width: 300px; height: 300px; background: #6366f1; top: -100px; left: -100px; }
+.b2 { width: 250px; height: 250px; background: #ec4899; bottom: -80px; right: -80px; }
+.b3 { width: 200px; height: 200px; background: #22d3ee; top: 40%; left: 60%; }
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-60px); }
 }
 
-#hero p {
-    max-width: 700px;
-    margin: 20px auto;
-    opacity: 0.85;
-}
-
+/* ▬▬▬ BOUTONS ▬▬▬ */
 .hero-buttons {
     margin-top: 25px;
 }
@@ -83,24 +88,6 @@ body {
     color: white;
     text-decoration: none;
     margin: 5px;
-}
-
-/* ▬▬▬ BULLES ▬▬▬ */
-.bubble {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.6;
-    animation: float 12s infinite alternate;
-}
-
-.b1 { width: 300px; height: 300px; background: #6366f1; top: -100px; left: -100px; }
-.b2 { width: 250px; height: 250px; background: #ec4899; bottom: -80px; right: -80px; }
-.b3 { width: 200px; height: 200px; background: #22d3ee; top: 40%; left: 60%; }
-
-@keyframes float {
-    from { transform: translateY(0); }
-    to { transform: translateY(-60px); }
 }
 
 /* ▬▬▬ SECTIONS ▬▬▬ */
@@ -134,6 +121,18 @@ section {
 
 .project:hover {
     transform: translateY(-5px);
+}
+
+/* ▬▬▬ SCROLL ANIMATION ▬▬▬ */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ▬▬▬ FOOTER ▬▬▬ */
