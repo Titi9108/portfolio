@@ -1,149 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
+    <title>Tarek RAJAB | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Tarek RAJAB</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- ▬▬▬ NAVBAR ▬▬▬ -->
-<nav class="nav">
-    <div class="logo">Tarek<span> RAJAB</span></div>
-    <ul class="nav-links">
+<nav class="navbar">
+    <div class="logo">Tarek <span>RAJAB</span></div>
+    <ul>
         <li><a href="#hero">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets</a></li>
         <li><a href="#experience">Expériences</a></li>
-        <li><a href="#entreprise">Entreprise</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-
-<!-- ▬▬▬ HERO PREMIUM ▬▬▬ -->
-<section id="hero" class="hero">
-
-    <!-- Bulles animées -->
+<!-- ▬▬▬ HERO ▬▬▬ -->
+<section id="hero">
     <div class="bubble b1"></div>
     <div class="bubble b2"></div>
     <div class="bubble b3"></div>
-    <div class="bubble b4"></div>
 
     <h1>Tarek RAJAB</h1>
-    <h2>BTS SIO SISR – Admin Systèmes & Réseaux Junior</h2>
+    <h2>BTS SIO SISR • Admin Systèmes & Réseaux</h2>
 
-    <p class="hero-desc">
-        Passionné par les réseaux, les systèmes, la virtualisation et la cybersécurité.
-        Alternant chez Vermeg France.
+    <p>
+        Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg. Passionné
+        par les systèmes, les réseaux, Windows Server, la virtualisation et la cybersécurité.
     </p>
 
     <div class="hero-buttons">
         <a href="#projects" class="btn-primary">Voir mes projets</a>
         <a href="#contact" class="btn-secondary">Me contacter</a>
+        <a href="cv.pdf" class="btn-secondary" download>Télécharger mon CV</a>
     </div>
-
 </section>
-
-
 
 <!-- ▬▬▬ À PROPOS ▬▬▬ -->
-<section id="about" class="section">
-    <h2 class="section-title">À propos</h2>
-
+<section id="about">
+    <h2>À propos</h2>
     <p>
-        Je m'appelle <strong>Tarek RAJAB</strong>, étudiant en BTS SIO option SISR.  
-        J’aime travailler sur l’administration système, la gestion réseau, la cybersécurité et les environnements virtualisés.
-        Actuellement, je suis en alternance chez <strong>Vermeg</strong>, une entreprise spécialisée dans les solutions financières.
+        Je me forme au métier d’administrateur systèmes & réseaux. Je travaille sur
+        Windows Server, Active Directory, virtualisation, Linux et la cybersécurité.
+        Sérieux, motivé et passionné par l'infrastructure IT.
     </p>
 </section>
-
-
 
 <!-- ▬▬▬ COMPÉTENCES ▬▬▬ -->
-<section id="skills" class="section">
-    <h2 class="section-title">Compétences</h2>
-
-    <ul>
-        <li>Administration Windows Server</li>
-        <li>Active Directory & GPO</li>
-        <li>Virtualisation (VMware / VirtualBox)</li>
-        <li>Supervision & gestion du réseau</li>
-        <li>Jira (installation, configuration, workflow, tickets)</li>
-        <li>Linux / Ubuntu Server</li>
-        <li>Cybersécurité – bonnes pratiques & durcissement système</li>
-    </ul>
+<section id="skills">
+    <h2>Compétences</h2>
+    <div class="cards">
+        <div class="card">Windows Server</div>
+        <div class="card">Active Directory / GPO</div>
+        <div class="card">VMware / VirtualBox</div>
+        <div class="card">Linux / Ubuntu Server</div>
+        <div class="card">Réseaux</div>
+        <div class="card">Cybersécurité & durcissement</div>
+        <div class="card">Jira (Tickets & Workflow)</div>
+    </div>
 </section>
-
-
 
 <!-- ▬▬▬ PROJETS ▬▬▬ -->
-<section id="projects" class="section">
-    <h2 class="section-title">Projets</h2>
+<section id="projects">
+    <h2>Projets</h2>
+    <div class="cards">
 
-    <h3>• Projet Windows Server</h3>
-    <p>
-        Installation complète d’un contrôleur de domaine, configuration d’Active Directory, OU, GPO et gestion des utilisateurs.
-    </p>
+        <div class="card project">
+            <h3>Projet Windows Server</h3>
+            <p>
+                Installation complète d’un contrôleur de domaine, configuration Active Directory,
+                OU, GPO et gestion des utilisateurs.
+            </p>
+        </div>
 
-    <h3>• Projet Jira</h3>
-    <p>
-        Installation, configuration complète, création des tickets, automatisations, mails, workflow, suivi et fermeture.
-    </p>
+        <div class="card project">
+            <h3>Projet Jira</h3>
+            <p>
+                Installation, configuration, création des tickets, automatisations,
+                mails, workflow et suivi des incidents.
+            </p>
+        </div>
+
+    </div>
 </section>
-
-
 
 <!-- ▬▬▬ EXPÉRIENCES ▬▬▬ -->
-<section id="experience" class="section">
-    <h2 class="section-title">Expériences</h2>
-
-    <h3>Alternant Administrateur Systèmes – Vermeg (2024–2026)</h3>
-    <p>
-        Gestion des tickets, support technique, configuration réseau, gestion des serveurs,
-        analyse des incidents, documentation technique, amélioration continue du SI.
-    </p>
+<section id="experience">
+    <h2>Expériences</h2>
+    <div class="card">
+        <h3>Alternant Administrateur Systèmes — Vermeg (2024–2026)</h3>
+        <p>
+            Support IT, gestion des tickets, Active Directory, supervision,
+            virtualisation, administration serveurs et amélioration continue.
+        </p>
+    </div>
 </section>
-
-
-
-<!-- ▬▬▬ ENTREPRISE ▬▬▬ -->
-<section id="entreprise" class="section">
-    <h2 class="section-title">Entreprise : Vermeg</h2>
-
-    <p>
-        Vermeg est une entreprise internationale spécialisée dans le développement de solutions logicielles
-        pour le secteur financier et bancaire.
-    </p>
-
-    <h3>Logo de Vermeg</h3>
-    <img src="https://files.catbox.moe/8z3lae.png" alt="Logo Vermeg" style="width:220px;display:block;margin:20px auto;border-radius:12px;">
-
-    <h3>Bâtiment Vermeg</h3>
-    <img src="https://files.catbox.moe/hs6ytx.jpg" alt="Bâtiment Vermeg" style="width:100%;max-width:800px;border-radius:16px;display:block;margin:20px auto;">
-
-    <h3>Localisation</h3>
-    <iframe 
-        src="https://www.google.com/maps?q=Vermeg+France&output=embed"
-        width="100%" 
-        height="350" 
-        style="border:0;border-radius:14px;margin-top:10px;">
-    </iframe>
-</section>
-
-
 
 <!-- ▬▬▬ CONTACT ▬▬▬ -->
-<section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
-
-    <p>📩 Email : <strong>tarekrajabpro@gmail.com</strong></p>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <strong>tarekrajabpro@gmail.com</strong></p>
 </section>
 
+<footer>
+    © 2025 — Tarek RAJAB
+</footer>
 
 </body>
 </html>
