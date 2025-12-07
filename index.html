@@ -17,6 +17,7 @@
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#projects">Projets</a></li>
         <li><a href="#experience">Expériences</a></li>
+        <li><a href="#enterprise">Entreprise</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -27,33 +28,31 @@
     <div class="bubble b2"></div>
     <div class="bubble b3"></div>
 
-    <h1>Tarek RAJAB</h1>
-    <h2>BTS SIO SISR • Admin Systèmes & Réseaux</h2>
+    <h1 class="reveal">Tarek RAJAB</h1>
+    <h2 class="reveal">BTS SIO SISR • Admin Systèmes & Réseaux</h2>
 
-    <p>
+    <p class="reveal">
         Étudiant en BTS SIO SISR et actuellement en alternance chez Vermeg. Passionné
-        par les systèmes, les réseaux, Windows Server, la virtualisation et la cybersécurité.
+        par Windows Server, les réseaux, la virtualisation et la cybersécurité.
     </p>
 
-    <div class="hero-buttons">
+    <div class="hero-buttons reveal">
         <a href="#projects" class="btn-primary">Voir mes projets</a>
         <a href="#contact" class="btn-secondary">Me contacter</a>
-        <a href="cv.pdf" class="btn-secondary" download>Télécharger mon CV</a>
     </div>
 </section>
 
 <!-- ▬▬▬ À PROPOS ▬▬▬ -->
-<section id="about">
+<section id="about" class="reveal">
     <h2>À propos</h2>
     <p>
-        Je me forme au métier d’administrateur systèmes & réseaux. Je travaille sur
-        Windows Server, Active Directory, virtualisation, Linux et la cybersécurité.
-        Sérieux, motivé et passionné par l'infrastructure IT.
+        Je me forme au métier d’administrateur systèmes & réseaux orienté infrastructure
+        Microsoft, virtualisation, réseaux et sécurité. Sérieux, motivé et rigoureux.
     </p>
 </section>
 
 <!-- ▬▬▬ COMPÉTENCES ▬▬▬ -->
-<section id="skills">
+<section id="skills" class="reveal">
     <h2>Compétences</h2>
     <div class="cards">
         <div class="card">Windows Server</div>
@@ -61,49 +60,73 @@
         <div class="card">VMware / VirtualBox</div>
         <div class="card">Linux / Ubuntu Server</div>
         <div class="card">Réseaux</div>
-        <div class="card">Cybersécurité & durcissement</div>
-        <div class="card">Jira (Tickets & Workflow)</div>
+        <div class="card">Cybersécurité</div>
+        <div class="card">Jira (tickets & workflow)</div>
     </div>
 </section>
 
 <!-- ▬▬▬ PROJETS ▬▬▬ -->
-<section id="projects">
+<section id="projects" class="reveal">
     <h2>Projets</h2>
     <div class="cards">
-
         <div class="card project">
-            <h3>Projet Windows Server</h3>
+            <h3>Windows Server</h3>
             <p>
-                Installation complète d’un contrôleur de domaine, configuration Active Directory,
-                OU, GPO et gestion des utilisateurs.
+                Installation contrôleur de domaine, Active Directory, OU, GPO,
+                gestion utilisateurs et sécurisation.
             </p>
         </div>
 
         <div class="card project">
-            <h3>Projet Jira</h3>
+            <h3>Jira</h3>
             <p>
-                Installation, configuration, création des tickets, automatisations,
-                mails, workflow et suivi des incidents.
+                Installation, configuration, tickets, automatisations,
+                workflows et suivi des incidents.
             </p>
         </div>
-
     </div>
 </section>
 
 <!-- ▬▬▬ EXPÉRIENCES ▬▬▬ -->
-<section id="experience">
+<section id="experience" class="reveal">
     <h2>Expériences</h2>
     <div class="card">
         <h3>Alternant Administrateur Systèmes — Vermeg (2024–2026)</h3>
         <p>
-            Support IT, gestion des tickets, Active Directory, supervision,
-            virtualisation, administration serveurs et amélioration continue.
+            Support IT, gestion des tickets, administration Active Directory,
+            supervision, virtualisation et documentation technique.
         </p>
     </div>
 </section>
 
+<!-- ▬▬▬ ENTREPRISE ▬▬▬ -->
+<section id="enterprise" class="reveal">
+    <h2>Entreprise — Vermeg</h2>
+
+    <p>
+        Vermeg est une entreprise internationale fondée en 2002, spécialisée dans le
+        développement de solutions logicielles pour le secteur financier et bancaire.
+    </p>
+
+    <p><strong>Mon poste :</strong></p>
+    <ul>
+        <li>Support IT</li>
+        <li>Gestion des tickets</li>
+        <li>Administration Active Directory</li>
+        <li>Virtualisation & supervision</li>
+    </ul>
+
+    <h3>Localisation</h3>
+    <iframe 
+        src="https://www.google.com/maps?q=VERMEG+France&output=embed"
+        width="100%" 
+        height="350" 
+        style="border-radius:16px;border:0;margin-top:20px;">
+    </iframe>
+</section>
+
 <!-- ▬▬▬ CONTACT ▬▬▬ -->
-<section id="contact">
+<section id="contact" class="reveal">
     <h2>Contact</h2>
     <p>Email : <strong>tarekrajabpro@gmail.com</strong></p>
 </section>
@@ -111,6 +134,19 @@
 <footer>
     © 2025 — Tarek RAJAB
 </footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add('active');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
