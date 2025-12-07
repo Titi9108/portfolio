@@ -1,231 +1,79 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+/* ==== COMPÉTENCES PRO STYLE ==== */
+
+#skills {
+  padding: 120px 8vw;
 }
 
-body {
-  background: radial-gradient(circle at top, #0b0f3c, #020312);
-  color: white;
-  overflow-x: hidden;
+#skills h2 {
+  font-size: 2.6rem;
+  margin-bottom: 60px;
 }
 
-/* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 14px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(5, 5, 20, 0.75);
-  backdrop-filter: blur(12px);
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.logo span {
-  color: #ff5fa2;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 18px;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-/* HERO */
-.hero {
-  min-height: 100vh;
-  padding: 140px 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background:
-    radial-gradient(circle at 30% 20%, rgba(90, 60, 255, 0.35), transparent 60%),
-    radial-gradient(circle at 70% 70%, rgba(255, 80, 160, 0.35), transparent 60%);
-}
-
-.hero h1 {
-  font-size: 3.2rem;
-}
-
-.hero p {
-  margin-top: 15px;
-  max-width: 600px;
-  line-height: 1.5;
-  opacity: 0.9;
-}
-
-/* BOUTONS */
-.buttons {
-  margin-top: 35px;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 14px 34px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #7a6aff, #ff5fa2);
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 0 18px rgba(255, 100, 200, 0.4);
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 28px rgba(255, 100, 200, 0.7);
-}
-
-.btn.ghost {
-  background: transparent;
-  border: 2px solid white;
-  box-shadow: none;
-}
-
-/* SECTIONS */
-.section {
-  padding: 120px 10vw;
-}
-
-/* TITRES */
-.section h2 {
-  margin-bottom: 40px;
-  font-size: 2.4rem;
-}
-
-/* CARTES */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
 }
 
+/* ✅ NOUVELLE CARTE PRO */
 .card {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 30px;
+  background: linear-gradient(
+    145deg,
+    rgba(120, 90, 255, 0.25),
+    rgba(255, 90, 180, 0.15)
+  );
   border-radius: 22px;
+  padding: 35px 20px;
   text-align: center;
-  transition: 0.35s;
-  backdrop-filter: blur(12px);
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.04);
-  background: rgba(255, 255, 255, 0.16);
-}
-
-/* GOOGLE MAP */
-iframe {
-  width: 100%;
-  height: 340px;
-  border-radius: 22px;
-  margin-top: 25px;
-  border: none;
-}
-
-/* FORMULAIRE */
-.contact-form {
-  max-width: 450px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 14px;
-  border-radius: 14px;
-  border: none;
-  outline: none;
-}
-
-.contact-form button {
-  padding: 14px;
-  border-radius: 999px;
-  border: none;
-  background: linear-gradient(90deg, #7a6aff, #ff5fa2);
-  color: white;
+  font-size: 1.05rem;
   font-weight: 600;
+  color: white;
+  backdrop-filter: blur(14px);
+  transition: all 0.35s ease;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-/* ANIMATIONS SCROLL */
-.section,
-.card {
+/* ✅ LUMIÈRE AU SURVOL */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.25), transparent 70%);
   opacity: 0;
-  transform: translateY(50px);
-  transition: 0.9s ease;
+  transition: 0.4s;
 }
 
-.show {
+.card:hover::before {
   opacity: 1;
-  transform: translateY(0);
 }
 
-/* BULLES */
-.bubbles span {
-  position: fixed;
-  width: 35px;
-  height: 35px;
-  background: rgba(140, 120, 255, 0.25);
-  border-radius: 50%;
-  animation: float 18s infinite ease-in;
-  z-index: -1;
+/* ✅ GROS EFFET HOVER */
+.card:hover {
+  transform: translateY(-12px) scale(1.06);
+  box-shadow:
+    0 18px 60px rgba(120, 90, 255, 0.55),
+    0 0 25px rgba(255, 90, 180, 0.45);
 }
 
-.bubbles span:nth-child(1) { left: 10%; animation-delay: 0s; }
-.bubbles span:nth-child(2) { left: 30%; animation-delay: 4s; }
-.bubbles span:nth-child(3) { left: 50%; animation-delay: 8s; }
-.bubbles span:nth-child(4) { left: 70%; animation-delay: 12s; }
-.bubbles span:nth-child(5) { left: 90%; animation-delay: 16s; }
-
-@keyframes float {
-  from {
-    bottom: -60px;
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  to {
-    bottom: 110vh;
-    opacity: 0;
-  }
+/* ✅ TEXTE CLIQUABLE BIEN VISIBLE */
+.card a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
 }
 
-/* ✅ RESPONSIVE TÉLÉPHONE */
+/* ✅ RESPONSIVE */
 @media (max-width: 768px) {
-  .hero {
-    padding: 120px 20px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .navbar ul {
-    gap: 12px;
-    font-size: 0.85rem;
-  }
-
-  .section {
+  #skills {
     padding: 90px 20px;
+  }
+  .card {
+    font-size: 0.95rem;
   }
 }
