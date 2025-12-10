@@ -1,65 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  display: flex;
-  background: linear-gradient(120deg, #fff5c3, #fdd6e8, #dcd8ff);
-  min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #fff4c2, #e6d8ff);
 }
 
-nav {
-  width: 80px;
-  background: linear-gradient(to bottom, #ff69b4, #8a6cff);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-  position: fixed;
-  height: 100vh;
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background: linear-gradient(180deg, #ff5ac8, #7a6cff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
 }
 
-nav a {
-  margin: 15px 0;
-  font-size: 22px;
-  text-decoration: none;
-  color: white;
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
-main {
-  margin-left: 100px;
-  padding: 50px;
-  width: 100%;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 12px 0;
+    font-weight: bold;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.main {
+    margin-left: 240px;
+    padding: 40px;
 }
 
-h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
+.section {
+    margin-bottom: 80px;
+}
+
+.section h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
 }
 
 .card {
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  max-width: 900px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
 }
 
-.btn {
-  background: linear-gradient(90deg, #ff69b4, #7b6cff);
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 30px;
-  display: inline-block;
-  margin-top: 20px;
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background: #7a6cff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
