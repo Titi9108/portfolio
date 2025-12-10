@@ -7,23 +7,28 @@
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Tarek <span>RAJAB</span></div>
-  <nav class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="experience.html">Expériences</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div id="navbar-container"></div>
 
-<section class="section">
-  <h1>Bienvenue sur mon portfolio</h1>
-  <p>Je suis Tarek Rajab, étudiant en BTS SIO option SISR, passionné par les systèmes, les réseaux et la cybersécurité.</p>
-  <a href="projects.html" class="btn">Voir mes projets</a>
+<section class="hero">
+  <h1>Tarek RAJAB</h1>
+  <h2>BTS SIO SISR – Admin Systèmes & Réseaux</h2>
+
+  <p>
+    Étudiant passionné par l’infrastructure, la cybersécurité,
+    la virtualisation et les réseaux. Actuellement en alternance chez Vermeg.
+  </p>
+
+  <div class="hero-buttons">
+    <a class="btn" href="projects.html">Voir mes projets</a>
+    <a class="btn-outline" href="contact.html">Me contacter</a>
+  </div>
 </section>
+
+<script>
+fetch("navbar.html").then(r => r.text()).then(d => {
+  document.getElementById("navbar-container").innerHTML = d;
+});
+</script>
 
 </body>
 </html>
