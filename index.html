@@ -2,33 +2,65 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - Tarek Rajab</title>
+  <title>Tarek Rajab | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <!-- Police moderne -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icônes -->
+  <script src="https://kit.fontawesome.com/9f1b8b1c6f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div id="navbar-container"></div>
-
-<section class="hero">
-  <h1>Tarek RAJAB</h1>
-  <h2>BTS SIO SISR – Admin Systèmes & Réseaux</h2>
-
-  <p>
-    Étudiant passionné par l’infrastructure, la cybersécurité,
-    la virtualisation et les réseaux. Actuellement en alternance chez Vermeg.
-  </p>
-
-  <div class="hero-buttons">
-    <a class="btn" href="projects.html">Voir mes projets</a>
-    <a class="btn-outline" href="contact.html">Me contacter</a>
+<!-- NAVBAR GAUCHE -->
+<div class="sidebar">
+  <div class="profile">
+    <h2>Tarek</h2>
+    <span>RAJAB</span>
   </div>
-</section>
 
-<script>
-fetch("navbar.html").then(r => r.text()).then(d => {
-  document.getElementById("navbar-container").innerHTML = d;
-});
-</script>
+  <nav>
+    <a href="index.html" title="Accueil"><i class="fas fa-house"></i></a>
+    <a href="apropos.html" title="À propos"><i class="fas fa-user"></i></a>
+    <a href="competences.html" title="Compétences"><i class="fas fa-laptop-code"></i></a>
+    <a href="projects.html" title="Projets"><i class="fas fa-diagram-project"></i></a>
+    <a href="experience.html" title="Expérience"><i class="fas fa-briefcase"></i></a>
+    <a href="certifications.html" title="Certifications"><i class="fas fa-certificate"></i></a>
+    <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+  </nav>
+</div>
+
+<!-- CONTENU -->
+<main class="content">
+
+  <section class="hero">
+    <h1>Portfolio de <span>Tarek Rajab</span></h1>
+    <h2>BTS SIO SISR – Administrateur Systèmes & Réseaux</h2>
+
+    <p>
+      Étudiant passionné par l’infrastructure, la cybersécurité,
+      la virtualisation et les réseaux.  
+      Actuellement en alternance chez Vermeg.
+    </p>
+
+    <div class="buttons">
+      <a href="projects.html" class="btn">Voir mes projets</a>
+      <a href="contact.html" class="btn outline">Me contacter</a>
+    </div>
+  </section>
+
+  <!-- VAGUES ÉTÉ ANIMÉES -->
+  <div class="waves">
+    <svg viewBox="0 0 1440 320">
+      <path fill="#00c6ff" fill-opacity="0.35"
+        d="M0,128L60,154.7C120,181,240,235,360,218.7C480,203,600,117,720,90.7C840,64,960,96,1080,138.7C1200,181,1320,235,1380,261.3L1440,288L1440,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+
+</main>
 
 </body>
 </html>
