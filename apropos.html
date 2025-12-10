@@ -7,24 +7,44 @@
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Tarek <span>RAJAB</span></div>
-  <nav class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="skills.html">Compétences</a>
-    <a href="projects.html">Projets</a>
-    <a href="experience.html">Expériences</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div id="navbar-container"></div>
 
-<section class="section">
+<section class="page">
   <h1>À propos de moi</h1>
-  <p>Je m’appelle Tarek Rajab, étudiant en BTS SIO option SISR. Je suis passionné par l’informatique, les réseaux, la cybersécurité et les infrastructures.</p>
-  <p>Je suis actuellement en alternance et je développe mes compétences en administration systèmes, Windows Server, virtualisation, réseaux et sécurité.</p>
-  <p>Mon objectif est de devenir administrateur systèmes et réseaux.</p>
+
+  <p>
+    Je m’appelle Tarek Rajab, étudiant en BTS SIO option SISR
+    (Solutions d’Infrastructure, Systèmes et Réseaux).
+    Je suis actuellement en alternance chez Vermeg en tant que support informatique.
+  </p>
+
+  <p>
+    Depuis plusieurs années, je développe une vraie passion pour
+    l’informatique, les réseaux, la sécurité, les systèmes,
+    la virtualisation et l’administration serveur.
+  </p>
+
+  <p>
+    J’ai déjà travaillé sur de nombreux projets :
+    installation de serveurs Windows,
+    Active Directory,
+    cybersécurité,
+    gestion de postes utilisateurs, scripts,
+    support technique,
+    dépannage matériel et réseau.
+  </p>
+
+  <p>
+    Mon objectif est de devenir administrateur systèmes & réseaux,
+    puis évoluer dans la cybersécurité.
+  </p>
 </section>
+
+<script>
+fetch("navbar.html").then(r => r.text()).then(d => {
+  document.getElementById("navbar-container").innerHTML = d;
+});
+</script>
 
 </body>
 </html>
